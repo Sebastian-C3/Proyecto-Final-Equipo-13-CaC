@@ -50,7 +50,7 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro modificado")
-                    window.location.href = "../templates/tarjetas.html";
+                    window.location.href = "../templates/index.html";
                 })
                 .catch(err => {
                     console.error(err);

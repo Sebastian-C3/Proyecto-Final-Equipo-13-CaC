@@ -1,6 +1,6 @@
 document.getElementById("header").innerHTML=` <nav class="navbar fixed-top navbar-expand-sm navbar-light " style="color: rgb(0,8,120,1);">
 <div class="container">
-<a class="navbar-brand" href="../templates/tarjetas.html">CRUD</a>
+<a class="navbar-brand" href="../templates/index.html">CRUD</a>
 
 <a class="btn btn-primary" href="../templates/tarjeta_nueva.html">Nuevo</a>
 </div>

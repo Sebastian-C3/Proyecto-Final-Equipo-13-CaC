@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Tarjetas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,40 +27,6 @@
                     <p>Cargando .....</p>
                 </section>
                 <section v-else>
-                    <!-- <div class="table-responsive"> -->
-                        <!-- <table class="table table-bordered"> -->
-                            <!-- <thead> -->
-                                <!-- <tr> -->
-                                    <!-- <th scope="col">Id</th> -->
-                                    <!-- <th scope="col">Titulo</th> -->
-                                    <!-- <th scope="col">Tipo</th> -->
-                                    <!-- <th scope="col">Reseña</th> -->
-                                    <!-- <th scope="col">Imagen</th> -->
-                                    <!-- <th scope="col">Estado</th> -->
-                                    <!-- <th scope="col">Accion</th> -->
-                                <!-- </tr> -->
-                            <!-- </thead> -->
-                            <!-- <tbody> -->
-                                <!-- <tr class="" v-for="tarjeta in tarjetas"> -->
-                                    <!-- <td scope="row">{{tarjeta.id}}</td> -->
-                                    <!-- <td>{{tarjeta.titulo}}</td> -->
-                                    <!-- <td>{{tarjeta.tipo}}</td> -->
-                                    <!-- <td>{{tarjeta.resenia}}</td> -->
-                                    <!-- <td> -->
-                                        <!-- <img width="60" :src="tarjeta.imagen" :alt="tarjeta.titulo"> -->
-                                    <!-- </td> -->
-                                    <!-- <td>{{tarjeta.estado}}</td> -->
-                                    <!-- <td> -->
-                                        <!-- <a class="btn btn-primary" -->
-                                            <!-- :href="'./tarjeta_update.html?id='+ tarjeta.id">Editar</a> -->
-                                        <!-- <button type="button" class="btn btn-danger" -->
-                                            <!-- v-on:click="eliminar(tarjeta.id)">Eliminar</button> -->
-                                    <!-- </td> -->
-                                <!-- </tr> -->
-                            <!-- </tbody> -->
-                        <!-- </table> -->
-                    <!-- </div> -->
-
                     <!-- Tarjetas -->
 
                     <h1>Contenido</h1>
@@ -82,7 +48,6 @@
                                             <h6 class="card-title">Reseña</h6>
                                             <p class="card-text">{{tarjeta.resenia}}</p>
                                         </div>
-            
 
                                         <div class="div-btn">
                                             <a class="btn btn-outline-primary"
@@ -99,9 +64,11 @@
             </div>
         </div>
     </main>
+
     <footer id="footer">
         <!-- place footer here -->
     </footer>
+
     <script>
         <!--Link de Bootstrap-->
         src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

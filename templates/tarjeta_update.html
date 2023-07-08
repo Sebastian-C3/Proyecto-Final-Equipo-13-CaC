@@ -18,7 +18,7 @@
     <main>
       <div class="container" id="app">
         <form>
-          <h2>Editar Tarjeta </h2>
+          <h1>Editar Tarjeta </h1>
 
           <label for="titulo" class="col-sm-2 col-form-label">Titulo</label>
           <div class="mb-3">
@@ -49,20 +49,20 @@
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="estado" id="visto" v-model="estado" value="Visto"
                   checked>
-                <label class="form-check-label" for="estado">
+                <label class="form-check-label" for="visto">
                   Visto
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="estado" id="viendo" v-model="estado" value="Viendo">
-                <label class="form-check-label" for="estado">
+                <label class="form-check-label" for="viendo">
                   Viendo
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="estado" id="para ver" v-model="estado"
                   value="Para ver">
-                <label class="form-check-label" for="estado">
+                <label class="form-check-label" for="para ver">
                   Para ver
                 </label>
               </div>
@@ -79,7 +79,7 @@
             <input type="text" class="form-control" name="imagen" id="imagen" v-model="imagen">
             <img width="100" :src="imagen" alt="">
           </div>
-          <button type="button" class="btn btn-outline-success btn-lg" v-on:click="modificar()">Guardar</button>
+          <button type="button" class="btn btn-outline-success btn-lg btn-edit" v-on:click="modificar()">Guardar</button>
         </form>
       </div>
     </main>

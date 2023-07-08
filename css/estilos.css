@@ -58,6 +58,15 @@ h1{
     color: white;
 }
 
+.btn-edit{
+    margin-left: calc(50% - 60px);
+}
+
+form{
+    max-width: 700px;
+    margin: auto;
+}
+
 .form-control{
     background-color: transparent;
     border: 1px solid #22254b;
@@ -80,8 +89,6 @@ h1{
 @media(max-width:767px){
 
     .card{
-        /* width: 300px; */
-        /* justify-self: center; */
         align-items: center;
     }
 

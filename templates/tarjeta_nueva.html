@@ -48,20 +48,20 @@
           <div class="col">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="estado" id="visto" v-model="estado" value="Visto">
-              <label class="form-check-label" for="estado">
+              <label class="form-check-label" for="visto">
                 Visto
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="estado" id="viendo" v-model="estado" value="Viendo">
-              <label class="form-check-label" for="estado">
+              <label class="form-check-label" for="viendo">
                 Viendo
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="estado" id="para ver" v-model="estado"
                 value="Para ver">
-              <label class="form-check-label" for="estado">
+              <label class="form-check-label" for="para ver">
                 Para ver
               </label>
             </div>
@@ -79,7 +79,7 @@
           <img width="100" :src="imagen" alt="">
         </div>
 
-        <button type="button" class="btn btn-outline-success btn-lg" v-on:click="grabar()">Guardar</button>
+        <button type="button" class="btn btn-outline-success btn-lg btn-edit" v-on:click="grabar()">Guardar</button>
       </form>
     </div>
   </main>

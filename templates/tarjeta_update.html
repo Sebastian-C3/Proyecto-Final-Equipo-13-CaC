@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Producto Nuevo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">    
+</head>
+
+<body>
+    <header id="header">
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container" id="app">
+            <form>
+                <h2>Editar Producto </h2>
+                <!-- <p>Precio:{{precio}}</p> -->
+                <!-- <div class="mb-3"> -->
+                    <!-- <label for="id">Id</label> -->
+                    <!-- <input type="number" name="id" id="id" disabled v-model="id"> -->
+                <!-- </div> -->
+
+                <label for="titulo" class="col-sm-2 col-form-label">Titulo</label>
+                <div class="mb-3">
+                    <input class="form-control" type="text" name="titulo" id="titulo" v-model="titulo">
+                </div>
+
+                <!-- <label for="tipo">Tipo</label> -->
+                <!-- <div class="mb-3"> -->
+                    <!-- <input type="text" class="form-control" name="tipo" id="tipo" v-model="tipo"> -->
+                <!-- </div> -->
+
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Tipo</legend>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipo" id="pelicula" v-model="tipo" value="Pelicula">
+                        <label class="form-check-label" for="pelicula">
+                          Pelicula
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipo" id="serie" v-model="tipo" value="Serie">
+                        <label class="form-check-label" for="serie">
+                          Serie
+                        </label>
+                      </div>
+                    </div>
+                </fieldset>
+
+                
+                <!-- <label for="estado">Estado</label> -->
+                <!-- <div class="mb-3"> -->
+                    <!-- <input type="text" class="form-control" name="estado" id="estado" v-model="estado"> -->
+                <!-- </div> -->
+
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Estado</legend>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estado" id="visto" v-model="estado" value="Visto" checked>
+                        <label class="form-check-label" for="estado">
+                          Visto
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estado" id="viendo" v-model="estado" value="Viendo">
+                        <label class="form-check-label" for="estado">
+                          Viendo
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estado" id="para ver" v-model="estado" value="Para ver">
+                        <label class="form-check-label" for="estado">
+                          Para ver
+                        </label>
+                      </div>
+                    </div>
+                </fieldset>
+
+              
+
+                <label for="resenia">Reseña</label>
+                <div class="mb-3">
+                    <textarea name="resenia" class="form-control" id="resenia" cols="30" rows="10" v-model="resenia"></textarea>
+                </div>
+
+                <label for="imagen">Imagen</label>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="imagen" id="imagen" v-model="imagen">
+                    <img width="100" :src="imagen" alt="">
+                </div>
+                <button type="button" class="btn btn-outline-success btn-lg" v-on:click="modificar()">Guardar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"> </script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/tarjeta_editar.js"></script>
+</body>
+
+</html>
